@@ -137,7 +137,7 @@ const KIP7Deploy = (): ReactElement => {
           <h3 className="title"> Upload Deployer Keystore File</h3>
           <View style={{ marginBottom: 10 }}>
             <Text>
-              Upload the Keystore file. This account must have enough Kaia to
+              Upload the Keystore file. This account must have enough KAIA to
               deploy a token contract.
             </Text>
           </View>
