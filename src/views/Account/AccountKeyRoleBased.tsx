@@ -344,9 +344,9 @@ const AccountKeyRoleBased = (): ReactElement => {
             Update AccountKey to RoleBased (AccountKeyRoleBased)
           </h3>
           <Text>
-            {`Klaytn provides decoupled keys from addresses, so that you can update your keys in the account. 
+            {`Kaia provides decoupled keys from addresses, so that you can update your keys in the account. 
 This page can be used to update account keys to `}
-            <LinkA link="https://docs.klaytn.foundation/klaytn/design/accounts#accountkeyrolebased">
+            <LinkA link="https://docs.kaia.io/docs/learn/accounts/#accountkeyrolebased-">
               [Docs : AccountKeyRoleBased]
             </LinkA>
           </Text>

@@ -120,7 +120,7 @@ const Navigator = (): ReactElement => {
           ))}
         </Nav>
         <Form className="ml-auto">
-          <NavLink href="https://github.com/klaytn/klaytn-online-toolkit">
+          <NavLink href="https://github.com/kaiachain/kaia-online-toolkit">
             <img
               src={githubIcon}
               style={{ height: '25px', width: '25px' }}

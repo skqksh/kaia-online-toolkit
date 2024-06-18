@@ -25,7 +25,7 @@ const KeccakFromString = (): ReactElement => {
 
   const caver = useMemo(() => new Caver(URLMAP.network['mainnet']['rpc']), [])
 
-  const exValue = 'Hello klaytn'
+  const exValue = 'Hello Kaia'
 
   const encodeABI = async (): Promise<void> => {
     setResult(undefined)

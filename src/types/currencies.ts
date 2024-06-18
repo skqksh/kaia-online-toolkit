@@ -1,7 +1,7 @@
 import { NominalType } from './common'
 
 export enum TokenSymbolEnum {
-  KLAY = 'KLAY',
+  KAIA = 'KAIA',
 }
 
 export type pToken = string & NominalType<'pToken'>

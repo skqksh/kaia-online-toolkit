@@ -121,9 +121,9 @@ const KIP7Deploy = (): ReactElement => {
           <h3 className="title">Deploy Fungible Token (KIP-7)</h3>
           <Text>
             You can deploy fungible token (KIP-7) contracts which provide basic
-            functionality to transfer tokens on the Klaytn testnet. This token
+            functionality to transfer tokens on the Kairos testnet. This token
             standard is ERC-20 compliant. Therefore, you can use this token
-            standard if you want to use ERC-20 for the Klaytn. However, there
+            standard if you want to use ERC-20 for the Kaia. However, there
             are some differences between KIP-7 and ERC-20; More optional
             functions are included like mint, burn and pause extensions. You can
             find more information{' '}
@@ -137,7 +137,7 @@ const KIP7Deploy = (): ReactElement => {
           <h3 className="title"> Upload Deployer Keystore File</h3>
           <View style={{ marginBottom: 10 }}>
             <Text>
-              Upload the Keystore file. This account must have enough KLAY to
+              Upload the Keystore file. This account must have enough Kaia to
               deploy a token contract.
             </Text>
           </View>

@@ -114,32 +114,32 @@ const KaikasTutorial3 = (): ReactElement => {
           <h3 className="title">Kaikas Tutorial 3</h3>
           <Text>
             {'You can test the following transaction types on this page:\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypesmartcontractdeploy">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypesmartcontractdeploy-">
               - Smart Contract Deploy
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedsmartcontractdeploy">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/fee-delegation/#txtypefeedelegatedsmartcontractdeploy-">
               - Smart Contract Deploy (Fee Delegation)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedsmartcontractdeploywithratio">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/partial-fee-delegation/#txtypefeedelegatedsmartcontractdeploywithratio-">
               - Smart Contract Deploy (Fee Delegation with Ratio)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypesmartcontractexecution">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypesmartcontractexecution-">
               - Smart Contract Execution: Token Transfer
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedsmartcontractexecution">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/fee-delegation/#txtypefeedelegatedsmartcontractexecution-">
               - Smart Contract Execution: Token Transfer (Fee Delegation)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedsmartcontractexecutionwithratio">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/partial-fee-delegation/#txtypefeedelegatedsmartcontractexecutionwithratio-">
               - Smart Contract Execution: Token Transfer (Fee Delegation with
               Ratio)
             </LinkA>
             {'\n\n'}
-            {'You can get some test KLAY from the '}
+            {'You can get some test KAIA from the '}
             <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
               faucet
             </LinkA>
@@ -233,7 +233,7 @@ const KaikasTutorial3 = (): ReactElement => {
                   'You must download the Kaikas to use this page. Kaikas is a browser extension that provides secure '
                 }
                 {
-                  'and usable means to interact with Klaytn network from web sites. In particular, it handles account '
+                  'and usable means to interact with Kaia network from web sites. In particular, it handles account '
                 }
                 {'management and connecting the user to the blockchain. \n\n'}
                 {

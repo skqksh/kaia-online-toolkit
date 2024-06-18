@@ -312,7 +312,7 @@ const KIP17Deploy = (): ReactElement => {
           <h3 className="title">Deploy Non-fungible Token (KIP-17)</h3>
           <Text>
             You can deploy non-fungible token (KIP-17) contracts which provide
-            basic functionality to transfer NFTs on the Klaytn network. KIP-17
+            basic functionality to transfer NFTs on the Kaia network. KIP-17
             is derived from ERC-721. But, there are some differences between
             KIP-17 and ERC-721; More optional extensions are defined, like
             minting with URI, burning, and pausing extensions. You can find more
@@ -329,7 +329,7 @@ const KIP17Deploy = (): ReactElement => {
           <h3 className="title"> Upload Deployer Keystore File</h3>
           <View style={{ marginBottom: 10 }}>
             <Text>
-              Upload the Keystore file. This account must have enough KLAY to
+              Upload the Keystore file. This account must have enough KAIA to
               deploy a KIP-17 smart contract.
             </Text>
           </View>
@@ -397,7 +397,7 @@ const keyring = caver.wallet.keyring.decrypt(keystoreJSON, password)`}
             <Label>NFT Name</Label>
             <FormInput
               type="text"
-              placeholder="NFT Name (e.g., KlaytnEverywhere)"
+              placeholder="NFT Name (e.g., KaiaEverywhere)"
               onChange={setTokenName}
               value={tokenName}
             />

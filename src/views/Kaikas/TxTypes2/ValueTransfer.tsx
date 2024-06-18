@@ -80,14 +80,14 @@ const ValueTransfer = ({ walletProps }: WalletInfoType): ReactElement => {
             <Label>To</Label>
             <FormInput
               type="text"
-              placeholder="Address you want to send KLAY"
+              placeholder="Address you want to send KAIA"
               onChange={setToAddress}
               value={toAddress}
             />
             <Label>Value</Label>
             <FormInput
               type="text"
-              placeholder="Value (KLAY)"
+              placeholder="Value (KAIA)"
               onChange={setValue}
               value={value}
             />

@@ -1,13 +1,13 @@
 const network = {
   testnet: {
-    rpc: 'https://klaytn-baobab-rpc.allthatnode.com:8551',
+    rpc: 'https://klaytn-baobab.g.allthatnode.com/full/evm',
     scope: 'https://baobab.scope.klaytn.com/tx/',
     finder: 'https://baobab.klaytnfinder.io/tx/',
     finderToken: 'https://baobab.klaytnfinder.io/token/',
     finderNFT: 'https://baobab.klaytnfinder.io/nft/',
   },
   mainnet: {
-    rpc: 'https://klaytn-mainnet-rpc.allthatnode.com:8551',
+    rpc: 'https://klaytn-mainnet.g.allthatnode.com/full/evm',
     scope: 'https://scope.klaytn.com/tx/',
     finder: 'https://www.klaytnfinder.io/tx/',
     finderToken: 'https://www.klaytnfinder.io/token/',

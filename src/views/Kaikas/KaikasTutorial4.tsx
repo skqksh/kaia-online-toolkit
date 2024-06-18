@@ -110,7 +110,7 @@ const KaikasTutorial4 = (): ReactElement => {
               - Sign Message (Not Tx Type)
             </LinkA>
             {'\n\n'}
-            {'You can get some test KLAY from the '}
+            {'You can get some test KAIA from the '}
             <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
               faucet
             </LinkA>
@@ -180,7 +180,7 @@ const KaikasTutorial4 = (): ReactElement => {
                   'You must download the Kaikas to use this page. Kaikas is a browser extension that provides secure '
                 }
                 {
-                  'and usable means to interact with Klaytn network from web sites. In particular, it handles account '
+                  'and usable means to interact with Kaia network from web sites. In particular, it handles account '
                 }
                 {'management and connecting the user to the blockchain. \n\n'}
                 {

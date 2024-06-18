@@ -176,9 +176,9 @@ const AccountKeyMultiSig = (): ReactElement => {
             Update AccountKey to MultiSigKey (AccountKeyMultiSig)
           </h3>
           <Text>
-            {`Klaytn provides decoupled keys from addresses, so that you can update your keys in the account.
+            {`Kaia provides decoupled keys from addresses, so that you can update your keys in the account.
 This page can be used to update account keys to `}
-            <LinkA link="https://docs.klaytn.foundation/klaytn/design/accounts#accountkeyweightedmultisig">
+            <LinkA link="https://docs.kaia.io/docs/learn/accounts/#accountkeyweightedmultisig-">
               [Docs : AccountKeyWeightedMultiSig]
             </LinkA>
           </Text>

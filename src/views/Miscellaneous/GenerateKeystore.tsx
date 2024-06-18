@@ -341,14 +341,14 @@ const GenerateKeystore = (): ReactElement => {
           <h3 className="title">Generate Keystore</h3>
           <Text>
             Generate Private Key(s), encrypt a keyring, and return a keystore.
-            Since Klaytn provides various account key types such as
-            multi-signature and role-based keys, Klaytn introduces keystore
+            Since Kaia provides various account key types such as
+            multi-signature and role-based keys, Kaia introduces keystore
             format v4 which is suitable to store multiple private keys. Single
             Keyring keystore file can be generated in both v3 and v4 format,
             while other keyring types are encrypted in v4 format. <br />
             For more details, please visit here:{' '}
             <LinkA link="https://kips.klaytn.foundation/KIPs/kip-3">
-              [KIP 3: Klaytn Keystore Format v4]
+              [KIP 3: Kaia Keystore Format v4]
             </LinkA>
           </Text>
           <Text style={{ color: 'red', fontWeight: 600, fontSize: 15 }}>

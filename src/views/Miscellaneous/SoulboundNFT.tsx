@@ -293,7 +293,7 @@ const SoulboundNFT = (): ReactElement => {
           <h3 className="title"> Upload Deployer Keystore File</h3>
           <View style={{ marginBottom: 10 }}>
             <Text>
-              Upload the Keystore file. This account must have enough KLAY to
+              Upload the Keystore file. This account must have enough KAIA to
               deploy a smart contract.
             </Text>
           </View>
@@ -357,7 +357,7 @@ const keyring = caver.wallet.keyring.decrypt(keystoreJSON, password)`}
             <Label>SBT Name</Label>
             <FormInput
               type="text"
-              placeholder="SBT Name (e.g., KlaySoul)"
+              placeholder="SBT Name (e.g., KaiaSoul)"
               onChange={setTokenName}
               value={tokenName}
             />

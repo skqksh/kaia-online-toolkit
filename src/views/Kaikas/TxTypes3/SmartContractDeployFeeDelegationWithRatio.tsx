@@ -107,7 +107,7 @@ const SmartContractDeployFeeDelegationWithRatio = ({
             <Label>Value</Label>
             <FormInput
               type="text"
-              placeholder="Value (KLAY)"
+              placeholder="Value (KAIA)"
               onChange={setValue}
               value={value}
             />

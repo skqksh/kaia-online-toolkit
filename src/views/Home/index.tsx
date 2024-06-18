@@ -34,7 +34,7 @@ const Main = (): ReactElement => {
     <Container>
       <StyledView>
         <Text style={{ fontSize: '40px', fontWeight: '600' }}>
-          Klaytn Online Toolkit
+          Kaia Online Toolkit
         </Text>
       </StyledView>
       <BorderLine />
@@ -43,9 +43,9 @@ const Main = (): ReactElement => {
           Install Caver-js
         </Text>
         <Text style={{ fontSize: '15px' }}>
-          <LinkA link="https://github.com/klaytn/caver-js">caver-js</LinkA> is a
+          <LinkA link="https://github.com/kaiachain/caver-js">caver-js</LinkA> is a
           JavaScript API library that allows developers to interact with a
-          Klaytn node using a HTTP or Websocket connection. To install, paste
+          Kaia node using a HTTP or Websocket connection. To install, paste
           that in a macOS Terminal or Linux shell prompt.
         </Text>
         <CodeBlock toggle={false} text="npm install caver-js        " />
@@ -53,13 +53,13 @@ const Main = (): ReactElement => {
       <BorderLine />
       <StyledView>
         <Text style={{ fontSize: '30px', fontWeight: '600' }}>
-          What Does Klaytn Online Toolkit Do?
+          What Does Kaia Online Toolkit Do?
         </Text>
         <Text style={{ fontSize: '15px', paddingBottom: '10px' }}>
-          <LinkA link="https://github.com/klaytn/klaytn-online-toolkit">
-            Klaytn-online-toolkit
+          <LinkA link="https://github.com/kaiachain/kaia-online-toolkit">
+            Kaia-online-toolkit
           </LinkA>{' '}
-          provides code samples and pages to help you utilize the Klaytn
+          provides code samples and pages to help you utilize the Kaia
           SDK(caver-js).
         </Text>
         <StyledGridV>
@@ -136,9 +136,9 @@ const Main = (): ReactElement => {
       </StyledView>
       <BorderLine />
       <StyledView>
-        <LinkA link="https://docs.klaytn.foundation/">
+        <LinkA link="https://docs.kaia.io/">
           <StyledCard>
-            <Text>Klaytn Documentation</Text>
+            <Text>Kaia Documentation</Text>
           </StyledCard>
         </LinkA>
       </StyledView>

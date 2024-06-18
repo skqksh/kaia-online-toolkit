@@ -78,8 +78,8 @@ export async function apiGetAccountAssetsKlaytn(
   })
 
   const result = {
-    symbol: 'KLAY',
-    name: 'Klaytn',
+    symbol: 'KAIA',
+    name: 'Kaia',
     decimals: '18',
     contractAddress: '',
     balance: response.data.result,

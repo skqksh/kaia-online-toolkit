@@ -45,9 +45,9 @@ const GetKeySection = ({
               <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
                 <Row style={{ gap: 4, alignItems: 'center' }}>
                   <Text style={{ color: COLOR.primary }}>
-                    1. Get some testnet KLAY
+                    1. Get some testnet KAIA
                   </Text>
-                  <Button size="sm">Move to get KLAY</Button>
+                  <Button size="sm">Move to get KAIA</Button>
                 </Row>
               </LinkA>
               <Row style={{ gap: 4, alignItems: 'center' }}>
@@ -58,8 +58,8 @@ const GetKeySection = ({
               </Row>
               <Row style={{ gap: 4, alignItems: 'center' }}>
                 <Text style={{ color: COLOR.primary }}>
-                  2. After getting testnet KLAY, you can retrieve your account
-                  info from Baobab network.
+                  2. After getting testnet KAIA, you can retrieve your account
+                  info from Kairos Testnet.
                 </Text>
                 <Button size="sm" onClick={refetchAccountInfo}>
                   Refetch account info

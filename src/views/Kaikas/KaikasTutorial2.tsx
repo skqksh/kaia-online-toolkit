@@ -113,31 +113,31 @@ const KaikasTutorial2 = (): ReactElement => {
           <h3 className="title">Kaikas Tutorial 2</h3>
           <Text>
             {'You can test the following transaction types on this page:\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypevaluetransfer">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypevaluetransfer-">
               - Value Transfer
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedvaluetransfer">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/fee-delegation/#txtypefeedelegatedvaluetransfer-">
               - Value Transfer (Fee Delegation)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedvaluetransferwithratio">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/partial-fee-delegation/#txtypefeedelegatedvaluetransferwithratio-">
               - Value Transfer (Fee Delegation with Ratio)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypevaluetransfermemo">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypevaluetransfermemo-">
               - Value Transfer with Memo
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedvaluetransfermemo">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/fee-delegation/#txtypefeedelegatedvaluetransfermemo-">
               - Value Transfer with Memo (Fee Delegation)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedvaluetransfermemowithratio">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/partial-fee-delegation/#txtypefeedelegatedvaluetransfermemowithratio-">
               - Value Transfer with Memo (Fee Delegation with Ratio)
             </LinkA>
             {'\n\n'}
-            {'You can get some test KLAY from the'}{' '}
+            {'You can get some test KAIA from the'}{' '}
             <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
               faucet
             </LinkA>{' '}
@@ -226,7 +226,7 @@ const KaikasTutorial2 = (): ReactElement => {
                   'You must download the Kaikas to use this page. Kaikas is a browser extension that provides secure '
                 }
                 {
-                  'and usable means to interact with Klaytn network from web sites. In particular, it handles account '
+                  'and usable means to interact with Kaia network from web sites. In particular, it handles account '
                 }
                 {'management and connecting the user to the blockchain. \n\n'}
                 {

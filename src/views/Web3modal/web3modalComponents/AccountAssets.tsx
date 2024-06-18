@@ -16,8 +16,8 @@ const AccountAssets = (props: any): ReactElement => {
     chainId === 1001 || chainId === 8217
       ? {
           contractAddress: '',
-          symbol: 'KLAY',
-          name: 'Klaytn',
+          symbol: 'KAIA',
+          name: 'Kaia',
           decimals: '18',
           balance: '0',
         }
