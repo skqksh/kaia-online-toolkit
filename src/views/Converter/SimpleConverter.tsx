@@ -51,9 +51,9 @@ const StyledCopyIconBox = styled(View)`
 `
 
 const optionsSimple: { unit: Unit; label: string;}[] = [
-  { unit: 'peb', label: 'Peb'},
+  { unit: 'peb', label: 'Kei'},
   { unit: 'ston', label: 'ston'},
-  { unit: 'KLAY', label: 'KLAY'},
+  { unit: 'KLAY', label: 'KAIA'},
 ]
 
 const SimpleUnitConverter = (props: ConverterProps): ReactElement => {
@@ -65,11 +65,11 @@ const SimpleUnitConverter = (props: ConverterProps): ReactElement => {
     <>
       <Title>Simple Unit Converter</Title>
       <Description>
-        The Peb converter from Klaytn is a simple and easy-to-use tool for
+        The Peb converter from Kaia is a simple and easy-to-use tool for
         converting between {optionsSimple.map((item) => item.label).join(', ')}.
         The page housing this tool provides a comprehensive explanation of these
         different units and their relationship to the expenditure of Gas in the
-        Klaytn ecosystem.
+        Kaia ecosystem.
       </Description>
       <CardBodyConverter>
         {optionsSimple.map((item) => {

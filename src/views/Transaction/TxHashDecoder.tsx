@@ -67,7 +67,7 @@ const TxHashDecoder = (): ReactElement => {
         <CardHeader>
           <h3 className="title">TxHash Decoder</h3>
           <Text>
-            Query a transaction by transaction hash from Klaytn to get a
+            Query a transaction by transaction hash from Kaia to get a
             transaction instance.
           </Text>
         </CardHeader>

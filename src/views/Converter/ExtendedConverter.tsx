@@ -55,18 +55,18 @@ const optionsExtended: {
   unit: Unit
   label: string
 }[] = [
-  { unit: 'peb', label: 'Peb' },
-  { unit: 'kpeb', label: 'KPeb' },
-  { unit: 'Mpeb', label: 'MPeb' },
-  { unit: 'Gpeb', label: 'GPeb' },
+  { unit: 'peb', label: 'Kei' },
+  { unit: 'kpeb', label: 'KKei' },
+  { unit: 'Mpeb', label: 'MKei' },
+  { unit: 'Gpeb', label: 'GKei' },
   { unit: 'ston', label: 'ston' },
-  { unit: 'uKLAY', label: 'uKLAY' },
-  { unit: 'mKLAY', label: 'mKLAY' },
-  { unit: 'KLAY', label: 'KLAY' },
-  { unit: 'kKLAY', label: 'kKLAY' },
-  { unit: 'MKLAY', label: 'MKLAY' },
-  { unit: 'GKLAY', label: 'GKLAY' },
-  { unit: 'TKLAY', label: 'TKLAY' },
+  { unit: 'uKLAY', label: 'uKAIA' },
+  { unit: 'mKLAY', label: 'mKAIA' },
+  { unit: 'KLAY', label: 'KAIA' },
+  { unit: 'kKLAY', label: 'kKAIA' },
+  { unit: 'MKLAY', label: 'MKAIA' },
+  { unit: 'GKLAY', label: 'GKAIA' },
+  { unit: 'TKLAY', label: 'TKAIA' },
 ]
 
 const ExtendedUnitConverter = (props: ConverterProps): ReactElement => {
@@ -78,11 +78,11 @@ const ExtendedUnitConverter = (props: ConverterProps): ReactElement => {
     <>
       <Title>Extended Unit Converter</Title>
       <Description>
-        The Peb converter from Klaytn is a simple and easy-to-use tool for
+        The Peb converter from Kaia is a simple and easy-to-use tool for
         converting between{' '}
         {optionsExtended.map((item) => item.label).join(', ')}. The page housing
         this tool provides a comprehensive explanation of these different units
-        and their relationship to the expenditure of Gas in the Klaytn
+        and their relationship to the expenditure of Gas in the Kaia
         ecosystem.
       </Description>
       <CardBodyConverter>

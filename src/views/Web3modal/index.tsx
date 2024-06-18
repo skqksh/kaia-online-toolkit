@@ -431,8 +431,8 @@ const Web3modalExample = (): ReactElement => {
                         padding: `${isUnderTabletWidth ? 0 : '0 120px'}`,
                       }}
                     >
-                      Sendtransaction(): send 0.000001 KLAY to the sender
-                      account on Klaytn Network(Mainnet, Testnet). On other
+                      Sendtransaction(): send 0.000001 KAIA to the sender
+                      account on Kaia Network(Mainnet, Testnet). On other
                       networks, the amount is zero.{'\n'}
                       eth.sign() allows signing an arbitrary hash, which means
                       it can be used to sign transactions, or any other data,

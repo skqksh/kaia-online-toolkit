@@ -112,31 +112,31 @@ const KaikasTutorial1 = (): ReactElement => {
           <h3 className="title">Kaikas Tutorial 1</h3>
           <Text>
             {'You can test the following transaction types on this page:\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypelegacytransaction">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypelegacytransaction-">
               - Value Transfer (Legacy)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypelegacytransaction">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypelegacytransaction-">
               - Smart Contract Deploy (Legacy)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypelegacytransaction">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypelegacytransaction-">
               - Smart Contract Execution: Token Transfer (Legacy)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypeaccountupdate">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypeaccountupdate-">
               - Account Update
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedaccountupdate">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/basic/#txtypeaccountupdate-">
               - Account Update (Fee Delegated)
             </LinkA>
             {'\n'}
-            <LinkA link="https://docs.klaytn.foundation/content/dapp/json-rpc/api-references/klay/transaction/transaction-type-support#txtypefeedelegatedaccountupdatewithratio">
+            <LinkA link="https://docs.kaia.io/docs/learn/transactions/partial-fee-delegation/#txtypefeedelegatedvaluetransferwithratio-">
               - Account Update (Fee Delegated with Ratio)
             </LinkA>
             {'\n\n'}
-            {'You can get some test KLAY from the '}
+            {'You can get some test KAIA from the '}
             <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
               faucet
             </LinkA>
@@ -223,7 +223,7 @@ const KaikasTutorial1 = (): ReactElement => {
                   'You must download the Kaikas to use this page. Kaikas is a browser extension that provides secure '
                 }
                 {
-                  'and usable means to interact with Klaytn network from web sites. In particular, it handles account '
+                  'and usable means to interact with Kaia network from web sites. In particular, it handles account '
                 }
                 {'management and connecting the user to the blockchain. \n\n'}
                 {

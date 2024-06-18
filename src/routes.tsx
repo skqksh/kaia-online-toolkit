@@ -56,7 +56,7 @@ const routes: RouteType[] = [
         name: 'Deploy & Mint & Transfer NFT (KIP-17)',
         component: Web3modalNFT,
         description:
-          'Deploys, mints, and transfers NFT(KIP-17) on klaytn network using Metamask, Kaikas, and Klip',
+          'Deploys, mints, and transfers NFT(KIP-17) on Kaia network using Metamask, Kaikas, and Klip',
       },
     ],
   },
@@ -168,7 +168,7 @@ const routes: RouteType[] = [
   },
   {
     path: '/kct',
-    name: 'Klaytn Tokens',
+    name: 'Kaia Tokens',
     items: [
       {
         path: '/KIP7Deploy',
@@ -192,7 +192,7 @@ const routes: RouteType[] = [
       },
       {
         path: '/KCTDetection',
-        name: 'Detect Klaytn Compatible Token (KCT)',
+        name: 'Detect Kaia Compatible Token (KCT)',
         component: DetectKCT,
         description:
           'Checks which KCT the smart contract implements using its address',
@@ -292,10 +292,10 @@ const routes: RouteType[] = [
     items: [
       {
         path: '/klaytnUnitConverters',
-        name: 'Klaytn Unit Converter',
+        name: 'Kaia Unit Converter',
         component: KlaytnUnitConverter,
         description:
-          'The Peb converter from Klaytn is a simple and easy-to-use tool for converting between peb, ston, and KLAY. The page housing this tool provides a comprehensive explanation of these different units and their relationship to the expenditure of Gas in the Klaytn ecosystem.',
+          'The Peb converter from Kaia is a simple and easy-to-use tool for converting between peb, ston, and KAIA. The page housing this tool provides a comprehensive explanation of these different units and their relationship to the expenditure of Gas in the Kaia ecosystem.',
       },
     ],
   },

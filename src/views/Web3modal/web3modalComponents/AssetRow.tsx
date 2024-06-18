@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Icon from './Icon'
 import ERC20Icon from './ERC20Icon'
-import KlaytnIcon from 'images/klaytn-logo.png'
+import KaiaIcon from 'images/kaia-logo.png'
 import eth from 'images/eth.svg'
 import { UTIL } from 'consts'
 import { ReactElement } from 'react'
@@ -31,8 +31,8 @@ const AssetRow = (props: any): ReactElement => {
   const nativeCurrencyIcon =
     asset.symbol && asset.symbol.toLowerCase() === 'eth'
       ? eth
-      : asset.symbol.toLowerCase() === 'klay'
-      ? KlaytnIcon
+      : asset.symbol.toLowerCase() === 'kaia'
+      ? KaiaIcon
       : null
   return (
     <SAssetRow {...props}>

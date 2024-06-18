@@ -49,9 +49,9 @@ const KeystoreResultForm = ({
                 <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
                   <Row style={{ gap: 4, alignItems: 'center' }}>
                     <Text style={{ color: COLOR.primary }}>
-                      Get some testnet KLAY
+                      Get some testnet KAIA
                     </Text>
-                    <Button size="sm">Move to get KLAY</Button>
+                    <Button size="sm">Move to get KAIA</Button>
                   </Row>
                 </LinkA>
                 <Row style={{ gap: 4, alignItems: 'center' }}>

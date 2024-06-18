@@ -250,8 +250,8 @@ const supportedChains: IChainData[] = [
     network_id: 8217,
     rpc_url: 'https://klaytn-mainnet-rpc.allthatnode.com:8551',
     native_currency: {
-      symbol: 'KLAY',
-      name: 'KLAY',
+      symbol: 'KAIA',
+      name: 'KAIA',
       decimals: '18',
       contractAddress: '',
       balance: '',
@@ -266,8 +266,8 @@ const supportedChains: IChainData[] = [
     network_id: 1001,
     rpc_url: 'https://klaytn-baobab-rpc.allthatnode.com:8551',
     native_currency: {
-      symbol: 'KLAY',
-      name: 'KLAY',
+      symbol: 'KAIA',
+      name: 'KAIA',
       decimals: '18',
       contractAddress: '',
       balance: '',

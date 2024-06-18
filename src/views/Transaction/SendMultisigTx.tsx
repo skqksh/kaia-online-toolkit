@@ -55,7 +55,7 @@ const SuccessMsgForm = ({
 }
 
 enum TokenTypeEnum {
-  KLAY = 'KLAY',
+  KLAY = 'KAIA',
   FT = 'KIP-7/ERC-20',
 }
 
@@ -167,12 +167,12 @@ const SendMultiSigTx = (): ReactElement => {
           <h3 className="title"> Send MultiSig Transaction </h3>
           <Text>
             This page is for sending a value transfer transaction with a{' '}
-            <LinkA link="https://docs.klaytn.foundation/klaytn/design/accounts#accountkeyweightedmultisig">
+            <LinkA link="https://docs.kaia.io/docs/learn/accounts/#accountkeyweightedmultisig-">
               multisig account
             </LinkA>
             (the account that owns Multiple Signing Keys). You can use this page
             to transfer value with the account with{' '}
-            <LinkA link="https://docs.klaytn.foundation/klaytn/design/accounts#accountkeyrolebased">
+            <LinkA link="https://docs.kaia.io/docs/learn/accounts/#accountkeyrolebased-">
               role-based keys
             </LinkA>{' '}
             or a single key.
@@ -204,9 +204,9 @@ const SendMultiSigTx = (): ReactElement => {
         <CardHeader>
           <h3 className="title">Transaction Information</h3>
           <Text>
-            Enter the recipient's address and KLAY amount. If you'd like to
+            Enter the recipient's address and KAIA amount. If you'd like to
             transfer KIP-7 or ERC-20 token, enter the contract address and token
-            amount instead of KLAY amount.
+            amount instead of KAIA amount.
           </Text>
         </CardHeader>
         <CardBody>
@@ -223,7 +223,7 @@ const SendMultiSigTx = (): ReactElement => {
             <View style={{ marginBottom: '10px' }}>
               <FormRadio
                 itemList={[
-                  { title: 'KLAY', value: TokenTypeEnum.KLAY },
+                  { title: 'KAIA', value: TokenTypeEnum.KLAY },
                   { title: 'KIP-7/ERC-20', value: TokenTypeEnum.FT },
                 ]}
                 selectedValue={tokenType}
@@ -244,7 +244,7 @@ const SendMultiSigTx = (): ReactElement => {
               Amount{' '}
               {`(Unit: ${
                 tokenType === TokenTypeEnum.KLAY
-                  ? 'KLAY'
+                  ? 'KAIA'
                   : 'Base unit of a token'
               })`}
             </Label>

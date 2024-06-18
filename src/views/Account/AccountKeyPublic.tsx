@@ -130,7 +130,7 @@ const AccountKeyPublic = (): ReactElement => {
             {
               'You can update the private key of your account to AccountKeyPublic.\n'
             }
-            <LinkA link="https://docs.klaytn.foundation/klaytn/design/accounts#accountkeypublic">
+            <LinkA link="https://docs.kaia.io/docs/learn/accounts/#accountkeypublic-">
               [Docs : AccountKeyPublic]
             </LinkA>
           </Text>

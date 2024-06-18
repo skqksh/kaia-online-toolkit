@@ -83,14 +83,14 @@ const DetectKCT = (): ReactElement => {
     <Container>
       <Card>
         <CardHeader>
-          <h3 className="title">Detect Klaytn Compatible Token (KCT)</h3>
+          <h3 className="title">Detect Kaia Compatible Token (KCT)</h3>
           <Text>
             <LinkA link="https://kips.klaytn.foundation/token">
-              Klaytn Compatible Token (KCT)
+              Kaia Compatible Token (KCT)
             </LinkA>{' '}
             is a special type of a smart contract that implements certain
             technical specifications. Everyone who wants to issue tokens on top
-            of Klaytn must follow the specification. KCT currently consists of
+            of Kaia must follow the specification. KCT currently consists of
             KIP-7, KIP-17, and KIP-37. You can check which KCT the smart
             contract implements using its address.
           </Text>

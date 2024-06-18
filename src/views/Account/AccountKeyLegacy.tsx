@@ -66,7 +66,7 @@ const AccountKeyLegacyOnchain = (): ReactElement => {
             {
               'You can create a new account with AccountKeyLegacy. The account has an address derived from the corresponding key pair.\n'
             }
-            <LinkA link="https://docs.klaytn.foundation/klaytn/design/accounts#accountkeylegacy">
+            <LinkA link="https://docs.kaia.io/docs/learn/accounts/#accountkeylegacy-">
               [Docs : AccountKeyLegacy]
             </LinkA>
           </Text>
@@ -114,9 +114,9 @@ const AccountKeyLegacyOnchain = (): ReactElement => {
               <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
                 <Row style={{ gap: 4, alignItems: 'center' }}>
                   <Text style={{ color: COLOR.primary }}>
-                    1. Get some testnet KLAY
+                    1. Get some testnet KAIA
                   </Text>
-                  <Button size="sm">Move to get KLAY</Button>
+                  <Button size="sm">Move to get KAIA</Button>
                 </Row>
               </LinkA>
               <Row style={{ gap: 4, alignItems: 'center' }}>
@@ -127,8 +127,8 @@ const AccountKeyLegacyOnchain = (): ReactElement => {
               </Row>
               <Row style={{ gap: 4, alignItems: 'center' }}>
                 <Text style={{ color: COLOR.primary }}>
-                  2. After getting testnet KLAY, you can retrieve your account
-                  info from Baobab network.
+                  2. After getting testnet KAIA, you can retrieve your account
+                  info from Kairos Testnet.
                 </Text>
                 <Button size="sm" onClick={refetchAccountInfo}>
                   Refetch account info
