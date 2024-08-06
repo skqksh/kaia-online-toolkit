@@ -127,7 +127,7 @@ const KIP7Deploy = (): ReactElement => {
             are some differences between KIP-7 and ERC-20; More optional
             functions are included like mint, burn and pause extensions. You can
             find more information{' '}
-            <LinkA link="https://kips.klaytn.foundation/KIPs/kip-7">here</LinkA>
+            <LinkA link="https://kips.kaia.io/KIPs/kip-7">here</LinkA>
             . After successful deployment, you can find contract account in the
             block explorer.
           </Text>

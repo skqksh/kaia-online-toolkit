@@ -1,6 +1,6 @@
 # Kaia Online Toolkit
 Kaia online toolkit provides code examples and github page to help to utilize the Kaia SDK(caver-js) easily.
-You can test library on: https://toolkit.klaytn.foundation/
+You can test library on: https://toolkit.kaia.io/
 
 ## Web3Modal Example
 On github page, you can see web3modal demo which is derived from [web3modal/example](https://github.com/WalletConnect/web3modal/tree/master/example) and modified to add Kaikas wallet and Klip wallet. You can add support for multiple providers including Kaikas provider and Klip wallet provider by using [@klaytn/web3modal](https://github.com/klaytn/klaytn-web3modal). We have created a PR in web3modal repo, which is still under review. So we temporarily provide @klaytn/web3modal package.

@@ -317,7 +317,7 @@ const KIP17Deploy = (): ReactElement => {
             KIP-17 and ERC-721; More optional extensions are defined, like
             minting with URI, burning, and pausing extensions. You can find more
             information{' '}
-            <LinkA link="https://kips.klaytn.foundation/KIPs/kip-17">
+            <LinkA link="https://kips.kaia.io/KIPs/kip-17">
               here
             </LinkA>
             . After successful deployment, you can find a contract account in
