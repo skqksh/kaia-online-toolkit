@@ -137,7 +137,7 @@ const KaikasTutorial1 = (): ReactElement => {
             </LinkA>
             {'\n\n'}
             {'You can get some test KAIA from the '}
-            <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
+            <LinkA link="https://faucet.kaia.io">
               faucet
             </LinkA>
             {" and try out the Kaikas' features on the Testnet."}

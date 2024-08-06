@@ -46,7 +46,7 @@ const KeystoreResultForm = ({
                   fileData={JSON.stringify(result.value, null, 2)}
                   fileName={keystoreName || `keystore-${result.value?.address}`}
                 />
-                <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
+                <LinkA link="https://faucet.kaia.io">
                   <Row style={{ gap: 4, alignItems: 'center' }}>
                     <Text style={{ color: COLOR.primary }}>
                       Get some testnet KAIA

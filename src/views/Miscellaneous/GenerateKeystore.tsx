@@ -347,7 +347,7 @@ const GenerateKeystore = (): ReactElement => {
             Keyring keystore file can be generated in both v3 and v4 format,
             while other keyring types are encrypted in v4 format. <br />
             For more details, please visit here:{' '}
-            <LinkA link="https://kips.klaytn.foundation/KIPs/kip-3">
+            <LinkA link="https://kips.kaia.io/KIPs/kip-3">
               [KIP 3: Kaia Keystore Format v4]
             </LinkA>
           </Text>

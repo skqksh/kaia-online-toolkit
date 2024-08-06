@@ -137,7 +137,7 @@ const kip37 = await caver.kct.kip37.detectInterface(contractAddress)`}
           {result?.success && description === KCTEnum.KIP7 && (
             <CardSection>
               <Text>
-                <LinkA link="https://kips.klaytn.foundation/KIPs/kip-7">
+                <LinkA link="https://kips.kaia.io/KIPs/kip-7">
                   KIP 7: Fungible Token Standard
                 </LinkA>
               </Text>
@@ -146,7 +146,7 @@ const kip37 = await caver.kct.kip37.detectInterface(contractAddress)`}
           {result?.success && description === KCTEnum.KIP17 && (
             <CardSection>
               <Text>
-                <LinkA link="https://kips.klaytn.foundation/KIPs/kip-17">
+                <LinkA link="https://kips.kaia.io/KIPs/kip-17">
                   KIP 17: Non-fungible Token Standard
                 </LinkA>
               </Text>
@@ -155,7 +155,7 @@ const kip37 = await caver.kct.kip37.detectInterface(contractAddress)`}
           {result?.success && description === KCTEnum.KIP37 && (
             <CardSection>
               <Text>
-                <LinkA link="https://kips.klaytn.foundation/KIPs/kip-37">
+                <LinkA link="https://kips.kaia.io/KIPs/kip-37">
                   KIP 37: Token Standard
                 </LinkA>
               </Text>

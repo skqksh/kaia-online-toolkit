@@ -269,7 +269,7 @@ const KIP37Deploy = (): ReactElement => {
             function is added to obtain the number of tokens, and more optional
             extensions are defined, like minting, burning, and pausing
             extensions. You can find more information{' '}
-            <LinkA link="http://kips.klaytn.foundation/KIPs/kip-37">here</LinkA>
+            <LinkA link="http://kips.kaia.io/KIPs/kip-37">here</LinkA>
             . After successful deployment, you can find a contract account in
             the block explorer.
           </Text>

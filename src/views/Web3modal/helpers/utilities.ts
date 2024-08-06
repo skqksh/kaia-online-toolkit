@@ -20,8 +20,8 @@ export function isObject(obj: any): boolean {
 export async function apiGetGasPriceKlaytn(chainId: number): Promise<string> {
   const url =
     chainId === 8217
-      ? 'https://klaytn-mainnet-rpc.allthatnode.com:8551'
-      : 'https://klaytn-baobab-rpc.allthatnode.com:8551'
+      ? 'https://public-en.node.kaia.io'
+      : 'https://public-en-kairos.node.kaia.io'
   const response = await axios.post(url, {
     jsonrpc: '2.0',
     id: 0,
@@ -68,8 +68,8 @@ export async function apiGetAccountAssetsKlaytn(
 ): Promise<IAssetData[]> {
   const url =
     chainId === 8217
-      ? 'https://klaytn-mainnet-rpc.allthatnode.com:8551'
-      : 'https://klaytn-baobab-rpc.allthatnode.com:8551'
+      ? 'https://public-en.node.kaia.io'
+      : 'https://public-en-kairos.node.kaia.io'
   const response = await axios.post(url, {
     jsonrpc: '2.0',
     id: 0,

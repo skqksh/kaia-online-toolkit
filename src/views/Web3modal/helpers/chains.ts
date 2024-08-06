@@ -248,7 +248,7 @@ const supportedChains: IChainData[] = [
     network: 'cypress',
     chain_id: 8217,
     network_id: 8217,
-    rpc_url: 'https://klaytn-mainnet-rpc.allthatnode.com:8551',
+    rpc_url: 'https://public-en.node.kaia.io',
     native_currency: {
       symbol: 'KAIA',
       name: 'KAIA',
@@ -264,7 +264,7 @@ const supportedChains: IChainData[] = [
     network: 'baobab',
     chain_id: 1001,
     network_id: 1001,
-    rpc_url: 'https://klaytn-baobab-rpc.allthatnode.com:8551',
+    rpc_url: 'https://public-en-kairos.node.kaia.io',
     native_currency: {
       symbol: 'KAIA',
       name: 'KAIA',
