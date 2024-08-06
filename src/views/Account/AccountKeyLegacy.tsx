@@ -111,7 +111,7 @@ const AccountKeyLegacyOnchain = (): ReactElement => {
                 />
               </View>
 
-              <LinkA link="https://baobab.wallet.klaytn.foundation/faucet">
+              <LinkA link="https://faucet.kaia.io">
                 <Row style={{ gap: 4, alignItems: 'center' }}>
                   <Text style={{ color: COLOR.primary }}>
                     1. Get some testnet KAIA

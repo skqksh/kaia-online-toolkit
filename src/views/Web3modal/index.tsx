@@ -188,7 +188,7 @@ const Web3modalExample = (): ReactElement => {
         package: KlipWeb3Provider,
         options: {
           bappName: 'web3Modal Example App',
-          rpcUrl: 'https://klaytn-mainnet-rpc.allthatnode.com:8551',
+          rpcUrl: 'https://public-en.node.kaia.io',
         },
       },
     }
