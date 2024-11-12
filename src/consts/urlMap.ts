@@ -1,17 +1,17 @@
 const network = {
   testnet: {
-    rpc: 'https://klaytn-baobab.g.allthatnode.com/full/evm',
-    scope: 'https://baobab.scope.klaytn.com/tx/',
-    finder: 'https://baobab.klaytnfinder.io/tx/',
-    finderToken: 'https://baobab.klaytnfinder.io/token/',
-    finderNFT: 'https://baobab.klaytnfinder.io/nft/',
+    rpc: 'https://public-en-kairos.node.kaia.io',
+    scope: 'https://kairos.kaiascope.com/tx/',
+    finder: 'https://kairos.kaiascan.io/tx/',
+    finderToken: 'https://kairos.kaiascan.io/token/',
+    finderNFT: 'https://kairos.kaiascan.io/nft/',
   },
   mainnet: {
-    rpc: 'https://klaytn-mainnet.g.allthatnode.com/full/evm',
-    scope: 'https://scope.klaytn.com/tx/',
-    finder: 'https://www.klaytnfinder.io/tx/',
-    finderToken: 'https://www.klaytnfinder.io/token/',
-    finderNFT: 'https://www.klaytnfinder.io/nft/',
+    rpc: 'https://public-en.node.kaia.io',
+    scope: 'https://kaiascope.com/tx/',
+    finder: 'https://kaiascan.io/tx/',
+    finderToken: 'https://kaiascan.io/token/',
+    finderNFT: 'https://kaiascan.io/nft/',
   },
 }
 
