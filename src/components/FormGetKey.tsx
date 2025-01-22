@@ -3,7 +3,7 @@ import _ from 'lodash'
 import styled from 'styled-components'
 import { Keystore, Keyring } from 'caver-js'
 
-import { COLOR, UTIL } from 'consts'
+import { COLOR, UTIL } from '@/consts'
 
 import {
   Text,
@@ -14,7 +14,7 @@ import {
   Row,
   FormFile,
   FormSelect,
-} from 'components'
+} from '@/components'
 
 import {
   createFromPrivateKey,

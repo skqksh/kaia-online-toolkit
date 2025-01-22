@@ -1,10 +1,10 @@
 import { ReactElement } from 'react'
 import styled from 'styled-components'
 
-import Row from './Row'
-import View from './View'
+import Row from './atom/Row'
+import View from './atom/View'
 import Button from './Button'
-import CodeBlock from './CodeBlock'
+import CodeBlock from './atom/CodeBlock'
 
 const StyledContainer = styled(View)`
   gap: 4px;

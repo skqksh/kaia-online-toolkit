@@ -2,9 +2,9 @@ import { ReactElement } from 'react'
 import styled from 'styled-components'
 import _ from 'lodash'
 
-import { STYLE } from 'consts'
+import { STYLE } from '@/consts'
 
-import { Text, Row } from 'components'
+import { Text, Row } from '@/components'
 
 const StyledRadioMenu = styled(Row)`
   gap: 8px;

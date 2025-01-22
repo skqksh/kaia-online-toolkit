@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import { FormGroup, Input, InputGroupText } from 'reactstrap'
 import { InputType } from 'reactstrap/types/lib/Input'
-import Row from './Row'
+import Row from './atom/Row'
 
 type InputFieldType = {
   value?: string

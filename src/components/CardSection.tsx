@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import View from './View'
+import View from './atom/View'
 
 const StyledSection = styled(View)`
   padding: 10px;

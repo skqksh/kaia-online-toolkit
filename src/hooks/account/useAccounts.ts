@@ -1,5 +1,5 @@
 import Caver, { AccountKeyForRPC, Keyring } from 'caver-js'
-import { useQuery } from 'react-query'
+import { useQuery } from '@tanstack/react-query'
 
 type AccountInfoType = {
   address: string

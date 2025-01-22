@@ -1,8 +1,8 @@
 import { ReactElement, useMemo } from 'react'
 
-import { COLOR } from 'consts'
-import { View, Label, CodeBlock, Text } from 'components'
-import { ResultFormType } from 'types'
+import { COLOR } from '@/consts'
+import { View, Label, CodeBlock, Text } from '@/components'
+import { ResultFormType } from '@/types'
 
 import CardSection from './CardSection'
 

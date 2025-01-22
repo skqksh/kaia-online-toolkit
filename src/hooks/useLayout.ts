@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from 'react'
 
-import { STYLE } from 'consts'
+import { STYLE } from '@/consts'
 
 const useLayout = (): {
   isDesktopWidth: boolean

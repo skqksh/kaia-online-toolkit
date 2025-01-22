@@ -1,50 +1,28 @@
 import { ReactElement } from 'react'
-import _ from 'lodash'
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Outlet } from 'react-router'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ToastContainer, Slide } from 'react-toastify'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import 'react-toastify/dist/ReactToastify.css'
-
-import './black-dashboard-react.css'
-import { RouteType } from 'types'
-import routes from '../routes'
-
-import MainPage from '../views/Home'
-
-import Navigator from './Navbar'
+import { darkTheme, KaThemeProvider } from '@kaiachain/kaia-design-system'
+import { ThemeProvider } from 'styled-components'
 
 const queryClient = new QueryClient()
-
-const getRoutes = (routes: RouteType[]): ReactElement[][] =>
-  _.map(routes, (prop) =>
-    _.map(prop.items, (item) => (
-      <Route
-        key={item.name}
-        path={prop.path + item.path}
-        element={<item.component />}
-      />
-    ))
-  )
 
 function App(): ReactElement {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <div className="content">
-          <Navigator />
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            {getRoutes(routes)}
-          </Routes>
-        </div>
-        <ToastContainer
-          position="top-right"
-          hideProgressBar
-          autoClose={1000}
-          transition={Slide}
-          limit={3}
-        />
-      </BrowserRouter>
+      <ThemeProvider theme={darkTheme}>
+        <KaThemeProvider theme="dark">
+          <Outlet />
+          <ToastContainer
+            position="top-right"
+            hideProgressBar
+            autoClose={1000}
+            transition={Slide}
+            limit={3}
+            theme="dark"
+          />
+        </KaThemeProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   )
 }

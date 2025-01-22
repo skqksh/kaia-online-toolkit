@@ -1,4 +1,4 @@
-import { COLOR } from 'consts'
+import { COLOR } from '@/consts'
 import { ReactElement, ReactNode } from 'react'
 import styled from 'styled-components'
 
@@ -15,7 +15,7 @@ const StyledA = styled.a`
   }
 `
 
-const LinkA = ({
+export const LinkA = ({
   link,
   children,
 }: {
@@ -28,5 +28,3 @@ const LinkA = ({
     </StyledA>
   )
 }
-
-export default LinkA
