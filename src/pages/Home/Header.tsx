@@ -16,6 +16,7 @@ import { useLocation } from 'react-router'
 
 const StyledContainer = styled(View)`
   background-color: ${themeFunc('gray', '10')};
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 `
 
 const StyledMainNav = styled(Row)`
@@ -99,11 +100,15 @@ const MenuItem = ({ title, to }: { title: string; to: RoutePath }) => {
 
 const Header = (): ReactElement => {
   const { network, changeNetwork } = useNetwork()
+  const { navigate } = useAppNavigate()
 
   return (
     <StyledContainer>
       <StyledMainNav>
-        <View style={{ justifyContent: 'center' }}>
+        <View
+          style={{ justifyContent: 'center', cursor: 'pointer' }}
+          onClick={() => navigate(RoutePath.Home)}
+        >
           <Row style={{ alignItems: 'baseline', gap: 6.2 }}>
             <img src={kaiaBrandImg} alt="logo" style={{ height: 16 }} />
             <StyledText>Toolkit</StyledText>
