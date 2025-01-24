@@ -1,15 +1,7 @@
 import { ReactElement } from 'react'
-import styled from 'styled-components'
-import { Outlet } from 'react-router'
 
-import { SideMenu, View } from '@/components'
+import { PageContainer } from '@/components'
 import { RoutePath } from '@/types'
-
-const StyledContainer = styled(View)`
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  min-height: 100dvh;
-`
 
 const subMenuList = [
   {
@@ -21,7 +13,7 @@ const subMenuList = [
     to: RoutePath.Account_Mnemonic,
   },
   {
-    title: 'Keystore',
+    title: 'KeystoreV3',
     to: RoutePath.Account_Keystore,
   },
   {
@@ -52,14 +44,7 @@ const subMenuList = [
 ]
 
 const Account = (): ReactElement => {
-  return (
-    <StyledContainer>
-      <SideMenu menuList={subMenuList} />
-      <View style={{ width: 700, margin: '0 auto' }}>
-        <Outlet />
-      </View>
-    </StyledContainer>
-  )
+  return <PageContainer menuList={subMenuList} />
 }
 
 export default Account

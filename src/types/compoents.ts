@@ -5,5 +5,5 @@ export type ResultFormType<T = string> =
     }
   | {
       success: false
-      message: string
+      error: any
     }

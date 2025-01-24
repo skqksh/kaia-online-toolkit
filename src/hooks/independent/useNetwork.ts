@@ -1,28 +1,30 @@
-import { LocalStorageKey } from '@/common'
-import { NetworkType, QueryKeyEnum } from '@/types'
 import { useQuery } from '@tanstack/react-query'
 
+import { LocalStorageKey } from '@/common'
+import { EvmChainIdEnum } from '@/consts'
+import { QueryKeyEnum } from '@/types'
+
 export type UseNetworkReturn = {
-  network: NetworkType
-  changeNetwork: (network: NetworkType) => void
+  chainId: EvmChainIdEnum
+  changeNetwork: (chainId: EvmChainIdEnum) => void
 }
 
 export const useNetwork = (): UseNetworkReturn => {
-  const { data: network = 'ethereum', refetch } = useQuery({
+  const { data: chainId = EvmChainIdEnum.ETHEREUM, refetch } = useQuery({
     queryKey: [QueryKeyEnum.NETWORK],
     queryFn: async () => {
       return (localStorage.getItem(LocalStorageKey.NETWORK) ??
-        'ethereum') as NetworkType
+        EvmChainIdEnum.ETHEREUM) as EvmChainIdEnum
     },
   })
 
-  const changeNetwork = (network: NetworkType) => {
-    localStorage.setItem(LocalStorageKey.NETWORK, network)
+  const changeNetwork = (chainId: EvmChainIdEnum) => {
+    localStorage.setItem(LocalStorageKey.NETWORK, chainId.toString())
     refetch()
   }
 
   return {
-    network,
+    chainId,
     changeNetwork,
   }
 }

@@ -11,7 +11,19 @@ export enum RoutePath {
   Account_AccountKeyRoleBased = '/account/accountKeyRoleBased',
   Account_KeystoreV4 = '/account/keystoreV4',
 
-  ERC = '/erc',
+  EIP = '/eip',
+  //EIP_About = '/eip/about',
+  EIP_20 = '/eip/20',
+  EIP_721 = '/eip/721',
+  EIP_1155 = '/eip/1155',
+
+  Wallet = '/wallet',
+  //Wallet_Metamask = '/wallet/metamask',
+  Wallet_KaiawalletExtension = '/wallet/kaiawalletExtension',
+  Wallet_KaiawalletMobile = '/wallet/kaiawalletMobile',
+  Wallet_Klip = '/wallet/klip',
+
+  Transaction = '/transaction',
 }
 
 export type RouteParams = {
@@ -27,5 +39,17 @@ export type RouteParams = {
   [RoutePath.Account_AccountKeyRoleBased]: undefined
   [RoutePath.Account_KeystoreV4]: undefined
 
-  [RoutePath.ERC]: undefined
+  [RoutePath.EIP]: undefined
+  //[RoutePath.EIP_About]: undefined
+  [RoutePath.EIP_20]: undefined
+  [RoutePath.EIP_721]: undefined
+  [RoutePath.EIP_1155]: undefined
+
+  [RoutePath.Wallet]: undefined
+  //[RoutePath.Wallet_Metamask]: undefined
+  [RoutePath.Wallet_KaiawalletExtension]: undefined
+  [RoutePath.Wallet_KaiawalletMobile]: undefined
+  [RoutePath.Wallet_Klip]: undefined
+
+  [RoutePath.Transaction]: undefined
 }

@@ -1,4 +1,4 @@
-import { NetworkType } from '@/types'
+import { EvmChainIdEnum } from '@/consts'
 import { createPublicClient, http } from 'viem'
 import { kaia, kairos, mainnet, sepolia } from 'viem/chains'
 
@@ -7,16 +7,16 @@ export type UseViemReturn = {
 }
 
 const chains = {
-  ethereum: mainnet,
-  sepolia,
-  kaia,
-  kairos,
+  [EvmChainIdEnum.ETHEREUM]: mainnet,
+  [EvmChainIdEnum.SEPOLIA]: sepolia,
+  [EvmChainIdEnum.KAIA]: kaia,
+  [EvmChainIdEnum.KAIROS]: kairos,
 }
 
 export const useViem = ({
   network,
 }: {
-  network: NetworkType
+  network: EvmChainIdEnum
 }): UseViemReturn => {
   const client = createPublicClient({
     chain: chains[network],

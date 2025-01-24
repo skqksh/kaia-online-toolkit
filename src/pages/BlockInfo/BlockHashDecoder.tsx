@@ -3,11 +3,12 @@ import { ReactElement } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { KaText } from '@kaiachain/kaia-design-system'
 
-import { useViem } from '@/hooks'
+import { useNetwork, useViem } from '@/hooks'
 import { View } from '@/components'
 
 const BlockHashDecoder = (): ReactElement => {
-  const { client } = useViem({ isTestnet: true })
+  const { network } = useNetwork()
+  const { client } = useViem({ network })
   const { data = 0n } = useQuery({
     queryKey: ['Block'],
     queryFn: async () => client.getBlockNumber(),

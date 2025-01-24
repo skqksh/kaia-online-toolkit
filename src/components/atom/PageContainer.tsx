@@ -1,20 +1,31 @@
 import { ReactElement } from 'react'
 import styled from 'styled-components'
+import { Outlet } from 'react-router'
 import { KaText, themeFunc, useKaTheme } from '@kaiachain/kaia-design-system'
 import { useLocation } from 'react-router'
 
 import kaiaImg from '@/images/kaia.svg'
 
 import { Row, View } from '@/components'
-import { RoutePath } from '@/types'
 import { useAppNavigate } from '@/hooks'
+import { RoutePath } from '@/types'
+
+export type SideMenuListType = {
+  title: string
+  to: RoutePath
+  isKaiaOnly?: boolean
+}[]
 
 const StyledContainer = styled(View)`
-  min-width: 300px;
-  padding: 20px;
-  align-items: flex-start;
-  background-color: ${themeFunc('gray', '10')};
-  border-top: 2px solid ${themeFunc('gray', '8')};
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100dvh;
+`
+
+const StyledBody = styled(View)`
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 `
 
 const StyledSubMenuItem = styled(View)`
@@ -27,6 +38,13 @@ const StyledSubHeightBar = styled(View)`
   height: 2px;
   background-color: ${themeFunc('gray', '2')};
   border-radius: 360px;
+`
+
+const StyledSubMenu = styled(View)`
+  padding: 20px;
+  align-items: flex-start;
+  background-color: ${themeFunc('gray', '10')};
+  border-top: 2px solid ${themeFunc('gray', '8')};
 `
 
 const SubMenuItem = ({
@@ -58,7 +76,7 @@ const SubMenuItem = ({
     </StyledSubMenuItem>
   )
 }
-export const SideMenu = ({
+const SideMenu = ({
   menuList,
 }: {
   menuList: {
@@ -68,7 +86,7 @@ export const SideMenu = ({
   }[]
 }): ReactElement => {
   return (
-    <StyledContainer>
+    <StyledSubMenu>
       {menuList.map((item) => (
         <SubMenuItem
           key={item.title}
@@ -77,6 +95,21 @@ export const SideMenu = ({
           isKaiaOnly={item.isKaiaOnly}
         />
       ))}
+    </StyledSubMenu>
+  )
+}
+
+export const PageContainer = ({
+  menuList,
+}: {
+  menuList: SideMenuListType
+}): ReactElement => {
+  return (
+    <StyledContainer>
+      <SideMenu menuList={menuList} />
+      <StyledBody>
+        <Outlet />
+      </StyledBody>
     </StyledContainer>
   )
 }

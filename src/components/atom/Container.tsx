@@ -1,6 +1,6 @@
 import { ReactElement, ReactNode } from 'react'
 import styled from 'styled-components'
-import { View } from '.'
+import { View } from '../atom'
 
 type ContainerType = {
   children: ReactNode

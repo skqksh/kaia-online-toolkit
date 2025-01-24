@@ -10,9 +10,10 @@ import {
 import kaiaBrandImg from '@/images/kaia_brand.svg'
 
 import { Row, View } from '@/components'
-import { NetworkType, RoutePath } from '@/types'
+import { RoutePath } from '@/types'
 import { useAppNavigate, useNetwork } from '@/hooks'
 import { useLocation } from 'react-router'
+import { EvmChainIdEnum } from '@/consts'
 
 const StyledContainer = styled(View)`
   background-color: ${themeFunc('gray', '10')};
@@ -44,22 +45,22 @@ const StyledHeightBar = styled(View)`
   border-radius: 360px;
 `
 
-const networkOptionList: { label: string; value: NetworkType }[] = [
+const networkOptionList: { label: string; value: EvmChainIdEnum }[] = [
   {
     label: 'Ethereum (1)',
-    value: 'ethereum',
+    value: EvmChainIdEnum.ETHEREUM,
   },
   {
     label: 'Sepolia (11155111)',
-    value: 'sepolia',
+    value: EvmChainIdEnum.SEPOLIA,
   },
   {
     label: 'Kaia (8217)',
-    value: 'kaia',
+    value: EvmChainIdEnum.KAIA,
   },
   {
     label: 'Kairos (1001)',
-    value: 'kairos',
+    value: EvmChainIdEnum.KAIROS,
   },
 ]
 
@@ -72,8 +73,16 @@ const menuList: {
     to: RoutePath.Account,
   },
   {
-    title: 'ERC',
-    to: RoutePath.ERC,
+    title: 'EIP',
+    to: RoutePath.EIP,
+  },
+  {
+    title: 'Wallet',
+    to: RoutePath.Wallet,
+  },
+  {
+    title: 'Transaction',
+    to: RoutePath.Transaction,
   },
 ]
 
@@ -99,7 +108,7 @@ const MenuItem = ({ title, to }: { title: string; to: RoutePath }) => {
 }
 
 const Header = (): ReactElement => {
-  const { network, changeNetwork } = useNetwork()
+  const { chainId, changeNetwork } = useNetwork()
   const { navigate } = useAppNavigate()
 
   return (
@@ -123,10 +132,10 @@ const Header = (): ReactElement => {
         </Row>
         <KaSelectBox
           containerStyle={{ maxWidth: 200 }}
-          selectedValue={network}
+          selectedValue={chainId}
           optionList={networkOptionList}
           onSelect={(value) => {
-            changeNetwork(value as NetworkType)
+            changeNetwork(value as EvmChainIdEnum)
           }}
         />
       </StyledMainNav>
