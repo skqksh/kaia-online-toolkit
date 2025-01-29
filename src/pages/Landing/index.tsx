@@ -10,8 +10,9 @@ import {
   themeFunc,
   useKaTheme,
 } from '@kaiachain/kaia-design-system'
-import { useAppNavigate } from '@/hooks'
+import { useAppNavigate, useLayout } from '@/hooks'
 import { RoutePath } from '@/types'
+import { STYLE } from '@/consts'
 
 const StyledContainer = styled(View)`
   padding: 20px;
@@ -26,6 +27,10 @@ const StyledTop = styled(View)`
   align-items: center;
   gap: 20px;
   text-align: center;
+
+  @media ${STYLE.media.tablet} {
+    margin-top: 80px;
+  }
 `
 
 const StyledHeroTitle = styled.h1`
@@ -40,6 +45,10 @@ const StyledWalletGrid = styled(View)`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
+
+  @media ${STYLE.media.tablet} {
+    grid-template-columns: 1fr;
+  }
 `
 
 const StyledSection = styled(View)`
@@ -50,18 +59,20 @@ const StyledSection = styled(View)`
 const Landing = (): ReactElement => {
   const { navigate } = useAppNavigate()
   const { getTheme } = useKaTheme()
+  const { isUnderTabletWidth } = useLayout()
 
   return (
     <StyledContainer>
       <StyledTop>
         <View style={{ paddingBottom: 80 }}>
-          <Row style={{ alignItems: 'baseline', gap: 42, paddingBottom: 50 }}>
-            <img src={kaiaBrandImg} alt="logo" style={{ height: 110 }} />
-            <StyledHeroTitle>Toolkit</StyledHeroTitle>
-          </Row>
-
+          {!isUnderTabletWidth && (
+            <Row style={{ alignItems: 'baseline', gap: 42, paddingBottom: 50 }}>
+              <img src={kaiaBrandImg} alt="logo" style={{ height: 110 }} />
+              <StyledHeroTitle>Toolkit</StyledHeroTitle>
+            </Row>
+          )}
           <KaText fontType="title/sm_700" color={getTheme('gray', '0')}>
-            {`Explore the future of blockchain development with Kaia Toolkit.\nTools, resources, and guidance to make your Web3 journey seamless.`}
+            Tools, resources, and guidance to make your Web3 journey seamless.
           </KaText>
         </View>
         <View>

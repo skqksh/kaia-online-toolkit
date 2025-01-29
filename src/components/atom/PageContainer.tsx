@@ -1,14 +1,21 @@
-import { ReactElement } from 'react'
-import styled from 'styled-components'
+import { ReactElement, useState } from 'react'
+import styled, { keyframes } from 'styled-components'
 import { Outlet } from 'react-router'
-import { KaText, themeFunc, useKaTheme } from '@kaiachain/kaia-design-system'
+import {
+  KaIcon,
+  KaText,
+  themeFunc,
+  useKaTheme,
+} from '@kaiachain/kaia-design-system'
 import { useLocation } from 'react-router'
 
 import kaiaImg from '@/images/kaia.svg'
 
 import { Row, View } from '@/components'
-import { useAppNavigate } from '@/hooks'
+import { useAppNavigate, useLayout } from '@/hooks'
 import { RoutePath } from '@/types'
+import { STYLE } from '@/consts'
+import ClickAwayListener from 'react-click-away-listener'
 
 export type SideMenuListType = {
   title: string
@@ -20,12 +27,24 @@ const StyledContainer = styled(View)`
   display: grid;
   grid-template-columns: 300px 1fr;
   min-height: 100dvh;
+
+  @media ${STYLE.media.tablet} {
+    grid-template-columns: 80px 1fr;
+  }
+
+  @media ${STYLE.media.mobile} {
+    grid-template-columns: 48px 1fr;
+  }
 `
 
 const StyledBody = styled(View)`
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+`
+
+const StyledSideMenu = styled(View)`
+  border-right: 2px solid ${themeFunc('gray', '8')};
 `
 
 const StyledSubMenuItem = styled(View)`
@@ -40,11 +59,72 @@ const StyledSubHeightBar = styled(View)`
   border-radius: 360px;
 `
 
-const StyledSubMenu = styled(View)`
+const mobileSubMenuOpen = keyframes`
+  
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+`
+
+const mobileSubMenuClose = keyframes`
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+`
+
+const showSubMenu = keyframes`
+  0% {
+    opacity: 0;
+    }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+        `
+
+const StyledSubMenu = styled(View)<{ $isMobileOpen: boolean }>`
   padding: 20px;
   align-items: flex-start;
   background-color: ${themeFunc('gray', '10')};
-  border-top: 2px solid ${themeFunc('gray', '8')};
+
+  @media ${STYLE.media.tablet} {
+    opacity: 0;
+    box-shadow: 0px 16px 32px 0px ${themeFunc('gray', '8')};
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    animation: 0.5s
+        ${({ $isMobileOpen }) =>
+          $isMobileOpen ? mobileSubMenuOpen : mobileSubMenuClose}
+        forwards,
+      ${showSubMenu} 1s forwards;
+  }
+
+  @media ${STYLE.media.mobile} {
+    width: 80%;
+  }
+`
+
+const StyledSubMenuOpen = styled(View)`
+  ${STYLE.clickable}
+  padding-top: 20px;
+  align-items: center;
+  gap: 10px;
+`
+
+const StyledMobileSubMenuClose = styled(View)`
+  ${STYLE.clickable}
+  position: absolute;
+  right: 20px;
+  top: 20px;
 `
 
 const SubMenuItem = ({
@@ -85,17 +165,40 @@ const SideMenu = ({
     isKaiaOnly?: boolean
   }[]
 }): ReactElement => {
+  const { isUnderTabletWidth } = useLayout()
+
+  const [openMobileSubMenu, setOpenMobileSubMenu] = useState(false)
+
   return (
-    <StyledSubMenu>
-      {menuList.map((item) => (
-        <SubMenuItem
-          key={item.title}
-          title={item.title}
-          to={item.to}
-          isKaiaOnly={item.isKaiaOnly}
-        />
-      ))}
-    </StyledSubMenu>
+    <ClickAwayListener onClickAway={() => setOpenMobileSubMenu(false)}>
+      <StyledSideMenu>
+        {isUnderTabletWidth && (
+          <StyledSubMenuOpen onClick={() => setOpenMobileSubMenu(true)}>
+            <KaIcon.ChevronRight fill="white" width={18} />
+            <KaText color="white" fontType="body/md_400" center>
+              {`Sub\nMenu`}
+            </KaText>
+          </StyledSubMenuOpen>
+        )}
+        <StyledSubMenu $isMobileOpen={openMobileSubMenu}>
+          {menuList.map((item) => (
+            <SubMenuItem
+              key={item.title}
+              title={item.title}
+              to={item.to}
+              isKaiaOnly={item.isKaiaOnly}
+            />
+          ))}
+          {isUnderTabletWidth && (
+            <StyledMobileSubMenuClose
+              onClick={() => setOpenMobileSubMenu(false)}
+            >
+              <KaIcon.X fill="white" width={18} />
+            </StyledMobileSubMenuClose>
+          )}
+        </StyledSubMenu>
+      </StyledSideMenu>
+    </ClickAwayListener>
   )
 }
 
