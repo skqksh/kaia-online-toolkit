@@ -18,6 +18,7 @@ import EIP_1155Page from './EIP/1155'
 
 import WalletPage from './Wallet'
 import Wallet_MetamaskPage from './Wallet/Metamask'
+import Wallet_RainbowKitPage from './Wallet/RainbowKit'
 import Wallet_KaiawalletExtensionPage from './Wallet/KaiawalletExtension'
 import Wallet_KaiawalletMobilePage from './Wallet/KaiawalletMobile'
 import Wallet_KlipPage from './Wallet/Klip'
@@ -78,6 +79,10 @@ export default [
           {
             index: true,
             Component: Wallet_MetamaskPage,
+          },
+          {
+            path: RoutePath.Wallet_RainbowKit,
+            Component: Wallet_RainbowKitPage,
           },
           {
             path: RoutePath.Wallet_KaiawalletExtension,

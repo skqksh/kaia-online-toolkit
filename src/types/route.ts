@@ -19,6 +19,7 @@ export enum RoutePath {
 
   Wallet = '/wallet',
   //Wallet_Metamask = '/wallet/metamask',
+  Wallet_RainbowKit = '/wallet/rainbowKit',
   Wallet_KaiawalletExtension = '/wallet/kaiawalletExtension',
   Wallet_KaiawalletMobile = '/wallet/kaiawalletMobile',
   Wallet_Klip = '/wallet/klip',
@@ -47,6 +48,7 @@ export type RouteParams = {
 
   [RoutePath.Wallet]: undefined
   //[RoutePath.Wallet_Metamask]: undefined
+  [RoutePath.Wallet_RainbowKit]: undefined
   [RoutePath.Wallet_KaiawalletExtension]: undefined
   [RoutePath.Wallet_KaiawalletMobile]: undefined
   [RoutePath.Wallet_Klip]: undefined

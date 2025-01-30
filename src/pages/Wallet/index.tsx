@@ -9,6 +9,10 @@ const subMenuList: SideMenuListType = [
     to: RoutePath.Wallet,
   },
   {
+    title: 'RainbowKit',
+    to: RoutePath.Wallet_RainbowKit,
+  },
+  {
     title: 'Kaiawallet Extension',
     to: RoutePath.Wallet_KaiawalletExtension,
     isKaiaOnly: true,
