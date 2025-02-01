@@ -18,6 +18,7 @@ const RainbowKit = (): ReactElement => {
   const { signMessageAsync } = useSignMessage()
   const [signedMessageRes, setSignedMessageRes] = useState('')
   const [inputMessage, setInputMessage] = useState('')
+
   return (
     <Container>
       <View>

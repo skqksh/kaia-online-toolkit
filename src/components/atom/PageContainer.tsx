@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react'
+import { ReactElement, ReactNode, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { Outlet } from 'react-router'
 import {
@@ -29,11 +29,11 @@ const StyledContainer = styled(View)`
   min-height: 100dvh;
 
   @media ${STYLE.media.tablet} {
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 8% 92%;
   }
 
   @media ${STYLE.media.mobile} {
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 14% 86%;
   }
 `
 
@@ -41,6 +41,7 @@ const StyledBody = styled(View)`
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+  padding-bottom: 200px;
 `
 
 const StyledSideMenu = styled(View)`
@@ -110,6 +111,7 @@ const StyledSubMenu = styled(View)<{ $isMobileOpen: boolean }>`
 
   @media ${STYLE.media.mobile} {
     width: 80%;
+    padding: 20px 3%;
   }
 `
 
@@ -204,15 +206,15 @@ const SideMenu = ({
 
 export const PageContainer = ({
   menuList,
+  children,
 }: {
   menuList: SideMenuListType
+  children?: ReactNode
 }): ReactElement => {
   return (
     <StyledContainer>
       <SideMenu menuList={menuList} />
-      <StyledBody>
-        <Outlet />
-      </StyledBody>
+      <StyledBody>{children ?? <Outlet />}</StyledBody>
     </StyledContainer>
   )
 }

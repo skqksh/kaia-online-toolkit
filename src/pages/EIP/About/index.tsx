@@ -3,9 +3,10 @@ import { KaText, KaTextInput, useKaTheme } from '@kaiachain/kaia-design-system'
 import styled from 'styled-components'
 
 import { Container, Card, View, LinkA } from '@/components'
-import { URL_MAP } from '@/consts'
-import { RoutePath } from '@/types'
+import { EIP } from '@/consts'
+
 import { useAppNavigate } from '@/hooks'
+import { EipItemType } from 'src/types/eip'
 
 const StyledCard = styled(Card)`
   display: grid;
@@ -17,47 +18,6 @@ const StyledLink = styled(View)`
   cursor: pointer;
 `
 
-enum EIPTypeEnum {
-  CORE = 'Core',
-  NETWORKING = 'Networking',
-  INTERFACE = 'Interface',
-  ERC = 'ERC',
-  META = 'Meta',
-  INFORMATIONAL = 'Informational',
-}
-
-type ItemType = {
-  no: string
-  type: EIPTypeEnum
-  to: RoutePath
-  title: string
-  doc: string
-}
-
-const list: ItemType[] = [
-  {
-    no: '20',
-    type: EIPTypeEnum.ERC,
-    title: 'Token Standard',
-    to: RoutePath.EIP_20,
-    doc: `${URL_MAP.eip}/EIPS/eip-20`,
-  },
-  {
-    no: '721',
-    type: EIPTypeEnum.ERC,
-    title: 'Non-Fungible Token Standard',
-    to: RoutePath.EIP_721,
-    doc: `${URL_MAP.eip}/EIPS/eip-721`,
-  },
-  {
-    no: '1155',
-    type: EIPTypeEnum.ERC,
-    title: 'Multi Token Standard',
-    to: RoutePath.EIP_1155,
-    doc: `${URL_MAP.eip}/EIPS/eip-1155`,
-  },
-]
-
 const Item = ({
   no,
   type,
@@ -65,7 +25,7 @@ const Item = ({
   doc,
   inputLower,
   to,
-}: ItemType & {
+}: EipItemType & {
   inputLower: string
 }): ReactElement => {
   const { getTheme } = useKaTheme()
@@ -137,13 +97,13 @@ const About = (): ReactElement => {
   const inputLower = useMemo(() => input.toLocaleLowerCase(), [input])
   const filteredList = useMemo(() => {
     return inputLower
-      ? list.filter(
+      ? EIP.list.filter(
           (x) =>
             x.no.toLocaleLowerCase().includes(inputLower) ||
             x.type.toLocaleLowerCase().includes(inputLower) ||
             x.title.toLocaleLowerCase().includes(inputLower)
         )
-      : list
+      : EIP.list
   }, [inputLower])
 
   return (

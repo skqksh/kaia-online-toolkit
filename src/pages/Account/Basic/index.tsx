@@ -1,23 +1,17 @@
 import { ReactElement } from 'react'
-import {
-  KaButton,
-  KaSelectBox,
-  KaText,
-  useKaTheme,
-} from '@kaiachain/kaia-design-system'
+import { KaButton, KaText, useKaTheme } from '@kaiachain/kaia-design-system'
 
 import {
   View,
   LinkA,
-  Row,
   Container,
   ActionCard,
   FormInput,
   Card,
+  SdkSelectBox,
 } from '@/components'
 
-import { useAccountBasicPage, codes } from '@/hooks/page/useAccountBasic'
-import { SdkType } from '@/types'
+import { useAccountBasicPage, codes } from '@/hooks/page/useAccountBasicPage'
 
 const Basic = (): ReactElement => {
   const {
@@ -49,18 +43,11 @@ const Basic = (): ReactElement => {
         </LinkA>
       </View>
 
-      <Row style={{ alignItems: 'center', gap: 8 }}>
-        <KaText fontType="body/lg_700">SDK</KaText>
-        <KaSelectBox
-          optionList={[
-            { value: 'viem', label: 'Viem' },
-            { value: 'ethers', label: 'Ethers' },
-            { value: 'web3', label: 'Web3' },
-          ]}
-          onSelect={(value) => setSdk(value as SdkType)}
-          selectedValue={sdk}
-        />
-      </Row>
+      <SdkSelectBox
+        sdk={sdk}
+        setSdk={setSdk}
+        optionsList={['viem', 'ethers', 'web3']}
+      />
       <ActionCard
         title="Account from private key"
         topComp={

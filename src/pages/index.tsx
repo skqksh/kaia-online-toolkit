@@ -1,5 +1,3 @@
-import { RouteObject } from 'react-router'
-
 import { RoutePath } from '@/types'
 
 import HomePage from './Home'
@@ -15,6 +13,7 @@ import EIP_AboutPage from './EIP/About'
 import EIP_20Page from './EIP/20'
 import EIP_721Page from './EIP/721'
 import EIP_1155Page from './EIP/1155'
+import EIP_2612Page from './EIP/2612'
 
 import WalletPage from './Wallet'
 import Wallet_MetamaskPage from './Wallet/Metamask'
@@ -22,6 +21,7 @@ import Wallet_RainbowKitPage from './Wallet/RainbowKit'
 import Wallet_KaiawalletExtensionPage from './Wallet/KaiawalletExtension'
 import Wallet_KaiawalletMobilePage from './Wallet/KaiawalletMobile'
 import Wallet_KlipPage from './Wallet/Klip'
+import { RouteObject } from 'react-router'
 
 export default [
   {
@@ -69,6 +69,10 @@ export default [
           {
             path: RoutePath.EIP_1155,
             Component: EIP_1155Page,
+          },
+          {
+            path: RoutePath.EIP_2612,
+            Component: EIP_2612Page,
           },
         ],
       },

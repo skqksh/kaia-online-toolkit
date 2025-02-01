@@ -18,7 +18,12 @@ const evmChainParams: Record<EvmChainIdEnum, AddEthereumChainParameter> = {
   [EvmChainIdEnum.SEPOLIA]: {
     chainId: EvmChainIdEnum.SEPOLIA,
     chainName: 'Sepolia',
-    rpcUrls: ['https://sepolia.drpc.org/'],
+    rpcUrls: [
+      'https://eth-sepolia.public.blastapi.io',
+      'wss://ethereum-sepolia-rpc.publicnode.com',
+      'https://1rpc.io/sepolia',
+      'https://sepolia.drpc.org/',
+    ],
     nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
     blockExplorerUrls: ['https://sepolia.etherscan.io/'],
   },

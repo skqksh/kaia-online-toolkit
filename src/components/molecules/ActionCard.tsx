@@ -10,6 +10,7 @@ export const ActionCard = ({
   onClickBtn,
   code,
   result,
+  bottomComp,
 }: {
   title: string
   topComp?: ReactNode
@@ -17,6 +18,7 @@ export const ActionCard = ({
   onClickBtn: () => void
   code?: string
   result?: string
+  bottomComp?: ReactNode
 }): ReactElement => {
   return (
     <Card>
@@ -32,6 +34,7 @@ export const ActionCard = ({
           <CodeBlock toggle={false} text={result} />
         </View>
       )}
+      {bottomComp}
     </Card>
   )
 }

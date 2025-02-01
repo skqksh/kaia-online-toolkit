@@ -6,6 +6,7 @@ import {
 } from '@kaiachain/kaia-design-system'
 import { ReactElement, ReactNode } from 'react'
 import styled from 'styled-components'
+import { View } from './View'
 
 const StyledA = styled.a`
   display: flex;
@@ -30,7 +31,9 @@ export const LinkA = ({
   return (
     <StyledA href={link} target="_blank">
       {children}
-      <KaIcon.ArrowUpRight width={20} fill={getTheme('info', '5')} />
+      <View style={{ width: 20, justifyContent: 'center' }}>
+        <KaIcon.ArrowUpRight width={20} fill={getTheme('info', '5')} />
+      </View>
     </StyledA>
   )
 }

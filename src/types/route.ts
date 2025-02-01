@@ -16,6 +16,7 @@ export enum RoutePath {
   EIP_20 = '/eip/20',
   EIP_721 = '/eip/721',
   EIP_1155 = '/eip/1155',
+  EIP_2612 = '/eip/2612',
 
   Wallet = '/wallet',
   //Wallet_Metamask = '/wallet/metamask',
@@ -45,6 +46,7 @@ export type RouteParams = {
   [RoutePath.EIP_20]: undefined
   [RoutePath.EIP_721]: undefined
   [RoutePath.EIP_1155]: undefined
+  [RoutePath.EIP_2612]: undefined
 
   [RoutePath.Wallet]: undefined
   //[RoutePath.Wallet_Metamask]: undefined

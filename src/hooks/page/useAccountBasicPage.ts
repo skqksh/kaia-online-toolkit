@@ -3,19 +3,15 @@ import * as viemAccounts from 'viem/accounts'
 import { ethers } from 'ethers' // https://docs.ethers.org/v6/
 import { eth } from 'web3' // https://docs.web3js.org/
 
-import { SdkType } from '@/types'
+import { SdkObject, SdkType } from '@/types'
 import { UTIL } from '@/common'
-
-type SdkObject = {
-  viem: string
-  ethers: string
-  web3: string
-}
 
 const DefaultSdkObject: SdkObject = {
   viem: '',
   ethers: '',
   web3: '',
+  'ethers-ext': '',
+  'web3js-ext': '',
 }
 
 export type UseAccountBasicPageReturn = {
@@ -34,7 +30,7 @@ export type UseAccountBasicPageReturn = {
   generateMnemonic: () => void
   mnemonicToAccount: () => void
 }
-export const codes = {
+export const codes: Record<string, SdkObject> = {
   accountFromPrivateKey: {
     viem: `import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
 
@@ -48,6 +44,8 @@ const wallet = new Wallet(privateKey)`,
 
 const privateKey = eth.accounts.create().privateKey
 const account = eth.accounts.privateKeyToAccount(privateKey)`,
+    'ethers-ext': '',
+    'web3js-ext': '',
   },
 
   accountFromMnemonic: {
@@ -61,6 +59,8 @@ const { address, publicKey } = mnemonicToAccount(mnemonic)`,
 const mnemonic = Wallet.createRandom().mnemonic?.phrase
 const wallet = HDNodeWallet.fromPhrase(mnemonic)`,
     web3: '',
+    'ethers-ext': '',
+    'web3js-ext': '',
   },
 }
 
