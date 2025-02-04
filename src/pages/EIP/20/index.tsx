@@ -21,7 +21,7 @@ import {
 } from '@/components'
 import { EIP, URL_MAP, CONTRACT, NETWORK } from '@/consts'
 import { useAppNavigate, useExplorer, useNetwork } from '@/hooks'
-import { RoutePath } from '@/types'
+import { RoutePath, SdkObject } from '@/types'
 import { useEip20Page } from '@/hooks/page/useEip20Page'
 
 const StyledSummary = styled.summary`
@@ -76,7 +76,7 @@ sendTransaction({
   value: 0n,
 })`
 
-const codesForEncodedData = {
+const codesForEncodedData: SdkObject = {
   viem: codeWrapper(
     `import { encodeDeployData, parseEther } from 'viem'`,
     `const encodedData = encodeDeployData({
@@ -99,8 +99,8 @@ const encodedData = contract
   .deploy({ data: bytecode, arguments: [address] })
   .encodeABI()`
   ),
-  'ethers-ext': '',
-  'web3js-ext': '',
+  ethersExt: '',
+  web3Ext: '',
 }
 
 const ERC20 = (): ReactElement => {

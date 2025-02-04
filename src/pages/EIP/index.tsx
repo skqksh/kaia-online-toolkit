@@ -34,7 +34,7 @@ const subMenuList = [
   }))
 )
 
-const EIP_ERC = (): ReactElement => {
+const EIPIndex = (): ReactElement => {
   const { pathname } = useLocation()
   const { chain } = useAccount()
   const { getTheme } = useKaTheme()
@@ -46,6 +46,7 @@ const EIP_ERC = (): ReactElement => {
     RoutePath.EIP_20,
     RoutePath.EIP_721,
     RoutePath.EIP_1155,
+    RoutePath.EIP_2612,
   ].includes(pathname as RoutePath)
 
   return (
@@ -95,4 +96,4 @@ const EIP_ERC = (): ReactElement => {
   )
 }
 
-export default EIP_ERC
+export default EIPIndex

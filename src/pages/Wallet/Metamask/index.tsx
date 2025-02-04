@@ -144,11 +144,11 @@ const Metamask = (): ReactElement => {
           />
           <Card>
             <View>
-              <LinkA link={`${URL_MAP.eip}/EIPS/eip-3085`}>
+              <LinkA link={`${URL_MAP.eip}EIPS/eip-3085`}>
                 EIP-3085: wallet_addEthereumChain RPC Method
               </LinkA>
               <LinkA
-                link={`${URL_MAP.metamaskDocs}/reference/json-rpc-methods/wallet_addethereumchain/`}
+                link={`${URL_MAP.metamaskDocs}reference/json-rpc-methods/wallet_addethereumchain/`}
               >
                 AddEthereumChain
               </LinkA>

@@ -6,7 +6,7 @@ import { Container, Card, View, LinkA } from '@/components'
 import { EIP } from '@/consts'
 
 import { useAppNavigate } from '@/hooks'
-import { EipItemType } from 'src/types/eip'
+import { EipItemType } from '@/types'
 
 const StyledCard = styled(Card)`
   display: grid;

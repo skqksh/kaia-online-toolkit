@@ -23,13 +23,13 @@ const RainbowKit = (): ReactElement => {
     <Container>
       <View>
         <KaText fontType="title/md_700">RainbowKit</KaText>
-        <LinkA link={`${URL_MAP.rainbowKit}/introduction`}>
+        <LinkA link={`${URL_MAP.rainbowKit}introduction`}>
           RainbowKit documentation
         </LinkA>
       </View>
       <Card>
         <KaText fontType="title/xs_700">Installation</KaText>
-        <LinkA link={`${URL_MAP.rainbowKit}/installation#manual-setup`}>
+        <LinkA link={`${URL_MAP.rainbowKit}installation#manual-setup`}>
           Manual setup
         </LinkA>
       </Card>

@@ -97,6 +97,10 @@ const menuList: {
     title: 'Transaction',
     to: RoutePath.Transaction,
   },
+  {
+    title: 'Utility',
+    to: RoutePath.Utility,
+  },
 ]
 
 const MenuItem = ({ title, to }: { title: string; to: RoutePath }) => {

@@ -6,11 +6,11 @@ import { Row } from '@/components'
 import { SdkType } from '@/types'
 
 const AllOptions: { value: SdkType; label: string }[] = [
-  { value: 'viem', label: 'Viem' },
-  { value: 'ethers', label: 'Ethers' },
-  { value: 'web3', label: 'Web3' },
-  { value: 'ethers-ext', label: 'Ethers-ext' },
-  { value: 'web3js-ext', label: 'Web3js-ext' },
+  { value: 'viem', label: 'viem' },
+  { value: 'ethers', label: 'ethers' },
+  { value: 'web3', label: 'web3' },
+  { value: 'ethersExt', label: 'ethers-ext' },
+  { value: 'web3Ext', label: 'web3js-ext' },
 ]
 
 export const SdkSelectBox = ({

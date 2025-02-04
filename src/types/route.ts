@@ -26,6 +26,10 @@ export enum RoutePath {
   Wallet_Klip = '/wallet/klip',
 
   Transaction = '/transaction',
+
+  Utility = '/utility',
+  //Utility_About = '/utility/about',
+  Utility_UnitConverter = '/utility/unitConverter',
 }
 
 export type RouteParams = {
@@ -56,4 +60,8 @@ export type RouteParams = {
   [RoutePath.Wallet_Klip]: undefined
 
   [RoutePath.Transaction]: undefined
+
+  [RoutePath.Utility]: undefined
+  //[RoutePath.Utility_About]: undefined
+  [RoutePath.Utility_UnitConverter]: undefined
 }

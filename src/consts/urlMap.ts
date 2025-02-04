@@ -1,3 +1,5 @@
+const kaiaDocs = 'https://docs.kaia.io/'
+
 const metamaskDocs = 'https://docs.metamask.io/wallet/'
 
 const eip = 'https://eips.ethereum.org/'
@@ -8,7 +10,9 @@ const openZeppelinWizard = 'https://wizard.openzeppelin.com/'
 const openzeppelinDocs = 'https://docs.openzeppelin.com/'
 
 const remix = 'https://remix.ethereum.org/'
+
 export default {
+  kaiaDocs,
   metamaskDocs,
   eip,
   rainbowKit,

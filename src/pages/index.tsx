@@ -1,4 +1,5 @@
 import { RoutePath } from '@/types'
+import { RouteObject } from 'react-router'
 
 import HomePage from './Home'
 import LandingPage from './Landing'
@@ -21,7 +22,12 @@ import Wallet_RainbowKitPage from './Wallet/RainbowKit'
 import Wallet_KaiawalletExtensionPage from './Wallet/KaiawalletExtension'
 import Wallet_KaiawalletMobilePage from './Wallet/KaiawalletMobile'
 import Wallet_KlipPage from './Wallet/Klip'
-import { RouteObject } from 'react-router'
+
+import TransactionPage from './Transaction'
+
+import UtilityPage from './Utility'
+import Utility_AboutPage from './Utility/About'
+import Utility_UnitConverterPage from './Utility/UnitConverter'
 
 export default [
   {
@@ -99,6 +105,24 @@ export default [
           {
             path: RoutePath.Wallet_Klip,
             Component: Wallet_KlipPage,
+          },
+        ],
+      },
+      {
+        path: RoutePath.Transaction,
+        Component: TransactionPage,
+      },
+      {
+        path: RoutePath.Utility,
+        Component: UtilityPage,
+        children: [
+          {
+            index: true,
+            Component: Utility_AboutPage,
+          },
+          {
+            path: RoutePath.Utility_UnitConverter,
+            Component: Utility_UnitConverterPage,
           },
         ],
       },

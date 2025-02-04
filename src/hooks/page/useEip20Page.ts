@@ -23,8 +23,8 @@ const DefaultSdkObject: SdkObject = {
   viem: '',
   ethers: '',
   web3: '',
-  'ethers-ext': '',
-  'web3js-ext': '',
+  ethersExt: '',
+  web3Ext: '',
 }
 
 export const useEip20Page = (): UseEip20PageReturn => {

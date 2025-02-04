@@ -10,8 +10,8 @@ const DefaultSdkObject: SdkObject = {
   viem: '',
   ethers: '',
   web3: '',
-  'ethers-ext': '',
-  'web3js-ext': '',
+  ethersExt: '',
+  web3Ext: '',
 }
 
 export type UseAccountBasicPageReturn = {
@@ -44,8 +44,8 @@ const wallet = new Wallet(privateKey)`,
 
 const privateKey = eth.accounts.create().privateKey
 const account = eth.accounts.privateKeyToAccount(privateKey)`,
-    'ethers-ext': '',
-    'web3js-ext': '',
+    ethersExt: '',
+    web3Ext: '',
   },
 
   accountFromMnemonic: {
@@ -59,8 +59,8 @@ const { address, publicKey } = mnemonicToAccount(mnemonic)`,
 const mnemonic = Wallet.createRandom().mnemonic?.phrase
 const wallet = HDNodeWallet.fromPhrase(mnemonic)`,
     web3: '',
-    'ethers-ext': '',
-    'web3js-ext': '',
+    ethersExt: '',
+    web3Ext: '',
   },
 }
 
